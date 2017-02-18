@@ -44,9 +44,9 @@ try:
         # httplib2 is a dependency of google-api-python-client, used
         # to run tests
         setuptools_kwargs['install_requires'].append('httplib2>=0.8,<1')
-    else:
-        setuptools_kwargs['install_requires'].append(
-            'google-api-python-client>=1.5.0')
+    #else:
+    #    setuptools_kwargs['install_requires'].append(
+    #        'google-api-python-client>=1.5.0')
 
     # mock is included in Python 3.3 as unittest.mock
     if sys.version_info < (3, 3):
